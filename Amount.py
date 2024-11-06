@@ -20,6 +20,12 @@ def amount(A, S):
         if remaining_sum == 0:
             # makes a copy and adds to the list of combinations
             result_list.append(list_of_combos)
+            return
+        # edge case for negative numbers
+        elif remaining_sum < 0:
+            return
+
+        for i in range(starting_point)
 
 
 
