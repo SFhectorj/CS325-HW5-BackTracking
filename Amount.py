@@ -20,7 +20,7 @@ def amount(A, S):
         # Part 3: Base case
         if remaining_sum == 0:
             # makes a copy and adds to the list of combinations
-            result_list.append(list_of_combos)
+            result_list.append(list_of_combos[:])
             return
         # edge case for negative numbers
         elif remaining_sum < 0:
