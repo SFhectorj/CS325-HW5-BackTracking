@@ -1,9 +1,9 @@
 def amount(A, S):
-    '''
+    """
     Parameters: A = Amount values, S = target sum
     This function will implement a backtracking algorithm to find
     all unique combinations of numbers that sum up to the target sum (S).
-    '''
+    """
     # Part 1: Sorting
     A.sort()
     result_list = []
