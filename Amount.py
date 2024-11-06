@@ -27,10 +27,14 @@ def amount(A, S):
             return
 
         # Part 4
+        # Set the starting point as the index
         i = starting_point
         while i < len(A):
+            # Add the element at the current index
             list_of_combos.append(A[i])
-            combination_helper()
+            # Recursion to update the remaining sum and move to the next index
+            combination_helper(remaining_sum - A[i], list_of_combos, i + 1)
+
 
 
 
