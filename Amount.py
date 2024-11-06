@@ -34,6 +34,9 @@ def amount(A, S):
             list_of_combos.append(A[i])
             # Recursion to update the remaining sum and move to the next index
             combination_helper(remaining_sum - A[i], list_of_combos, i + 1)
+            # Part 5: Backtrack
+            list_of_combos.pop()
+            
 
 
 
