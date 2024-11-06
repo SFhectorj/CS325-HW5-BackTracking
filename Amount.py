@@ -1,0 +1,2 @@
+def amount(A, S):
+
