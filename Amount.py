@@ -8,6 +8,7 @@ def amount(A, S):
     A.sort()
     result_list = []
 
+    # Part 2: Helper Function
     def combination_helper(remaining_sum, list_of_combos, starting_point):
         """
         :param remaining_sum: The sum needed to be achieved
@@ -16,7 +17,7 @@ def amount(A, S):
         This is a helper function that stores the main backtracking implementation
         for the amount function.
         """
-        # Base case
+        # Part 3: Base case
         if remaining_sum == 0:
             # makes a copy and adds to the list of combinations
             result_list.append(list_of_combos)
@@ -25,7 +26,12 @@ def amount(A, S):
         elif remaining_sum < 0:
             return
 
-        for i in range(starting_point)
+        # Part 4
+        i = starting_point
+        while i < len(A):
+            list_of_combos.append(A[i])
+            combination_helper()
+
 
 
 
