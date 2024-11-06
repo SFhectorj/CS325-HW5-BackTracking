@@ -38,6 +38,14 @@ def amount(A, S):
             list_of_combos.pop()
             # Avoid duplicates
             next_element = i + 1
+            # When the next element is equal to the current element
+            while next_element < len(A) and A[next_element] == A[i]:
+                # Move on
+                next_element += 1
+            i = next_element
+
+    combination_helper(S, [], 0)
+    return result_list
 
 
 
